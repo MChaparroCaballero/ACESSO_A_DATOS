@@ -15,7 +15,7 @@ public class Ejercicio2 {
 		cantidadNumeros=lector.nextInt();
 		
 		
-		//validar que la cantidad de numeros sea positiva//
+		//validar que la cantidad de numeros sea positivas//
 		if(cantidadNumeros<=0) {
 			System.out.println("la cantidad debe ser mayor que cero");
 		
