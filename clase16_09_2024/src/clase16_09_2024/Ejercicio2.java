@@ -15,7 +15,7 @@ public class Ejercicio2 {
 		cantidadNumeros=lector.nextInt();
 		
 		
-		//validar que la cantidad de numeros sea positivas//
+		//validar que la cantidad de numeros sea positivasf//
 		if(cantidadNumeros<=0) {
 			System.out.println("la cantidad debe ser mayor que cero");
 		
@@ -35,8 +35,14 @@ public class Ejercicio2 {
 				//nuevo min//
 				if(numActual<min) {
 					min=numActual;
+					contadorMin=1;
+				}else if(numActual==min) {
+					contadorMin++;
 				}
 			}
+			
+			System.out.println("El minimo es " +min+" y aparece "+ contadorMin+ " "+(contadorMin==1 ? "vez" : "veces"));
+			System.out.println("El maximo es " +max+" y aparece "+ contadorMax+ " "+(contadorMax==1 ? "vez" : "veces"));
 		}
 	}
 
