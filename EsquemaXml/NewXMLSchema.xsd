@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NewXMLSchema" xmlns:tns="http://www.example.org/NewXMLSchema" elementFormDefault="qualified">
+
+    <complexType name="Videojuego">
+    	<sequence>
+    		<element name="Desarrollador" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Plataforma" type="string" maxOccurs="unbounded" minOccurs="1"></element>
+    		<element name="Género" type="string" maxOccurs="unbounded" minOccurs="1"></element>
+    		<element name="AñodeLanzamiento" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="ClasificaciónPorEdades" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="NumeroDeCopiasDisponibles" type="int" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="Titulo" type="string"></attribute>
+    </complexType>
+
+    <complexType name="Videojuegos">
+    	<sequence>
+    		<element name="videojuego" type="tns:Videojuego" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="ColeccionVideojuegos" type="tns:Videojuegos"></element>
+</schema>
