@@ -80,7 +80,7 @@ public class Principal {
 					break;
 				case 3:
 					String consulta;
-					System.out.println(" \nQue consulta quieres hacer?"+"\n1.Mostrar todos los titulos"+"\n2.Mostar videojuegos posteriores a un año especifico"+"\n3Mostrar todos los videojuegos creados por un desarrollador en especifico"+"\n4. Mostrar todos los videoejugos creados posterior a 2015");
+					System.out.println(" \nQue consulta quieres hacer?"+"\n1.Mostrar todos los titulos"+"\n2.Mostar videojuegos posteriores a un año especifico"+"\n3.Mostrar todos los videojuegos creados por un desarrollador en especifico"+"\n4. Mostrar todos los videoejugos creados posterior a 2015");
 					
 					int opt2= sc.nextInt();
 					switch(opt2) {
